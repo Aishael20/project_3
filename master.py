@@ -45,8 +45,17 @@ print("Men lis ki gen endeks tout karaktè ti a ki nan chenn lan:",lis_a)
 # epi kole chenn sa ak kantite karaktè li genyen (Pa kontwole espas yo).
 espas=chen.replace(" ","")
 print("Chenn kole ak longe l san espas bay sa:\n",espas+str(len(espas)))
-#---------------------------------------------------------------------------------------
-#---------Master List--------------------------------------------------------------------
+#    ---------------------------------------------------------------------------------------
+print("----------------------------------Master list--------------------------------------")
+#1)Kreye yon lis eleman ki divizib pa 2, nan entèval [0-n] enklizif
+lis=[0,1,2,3,4,5,6,7,8,9,10]
+modilo=[]
+for el in lis:
+    if el%2==0:
+        modilo.append(el)
+print("Men lis eleman ki divizib pa 2 nan enteval [0-10] lan:\n",modilo)
+    
+
 
 
 
