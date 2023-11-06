@@ -62,14 +62,58 @@ print("Konvesyon yon lis antye an yon lis chene bay sa:\n",Lis_chen)
 #3)Konvèti yon lis chen miniskil an majiskil
 lisminiskil=['plumme','papier','cahier','c']
 lismajiskil=[m.upper() for m in lisminiskil]
-print(list(lismajiskil))
+print("Lis chenn ['plumme','papier','cahier','c'] an majiskil bay sa:",list(lismajiskil))
 #4) kreyasyon yon nouvo lis ki fèt ak eleman ki nan endèks ki divizib pa 3 yo sèlman
 lis_s=[1,'a',3,'c',5,'e',7,'z']
 lis_3=[lis_s[i] for i in range (len(lis_s)) if i%3==0]
-print("Nan yon lis [1,'a',3,'c[]',5,'e',7,'z']Eleman ki nan endeks ki divizib pa 3 yo se:",lis_3)
+print("Nan yon lis [1,'a',3,'c',5,'e',7,'z']Eleman ki nan endeks ki divizib pa 3 yo se:",lis_3)
 
-            
-       # print(lis_3.append(i))
+#5) kreyasyon yon nouvo lis ki gen chak 3 eleman yo gwoupe anndan yon tipl
+lis_i=[1,2,3,4,5,6,7,8,9] 
+lis_tipl = [tuple(lis_i[i:i+3]) for i in range(0, len(lis_i), 3)]
+print("Men yon nouvo lis avek chak 3 eleman yo andann yon tipl:",lis_tipl)
+
+#6)Konvesyon an yon lis, ki pa gen okenn doublon.
+
+lis_d= [1, 2, 2, 3, 3, 4, 5,'do','do','mi' ]
+
+lis_s_d = list(set(lis_d))
+print("Lis san doublon an bay sa:",lis_s_d)
+
+#7)Kreyasyon yon nouvo lis, ki genyen sèlman eleman komen ant 2 lis ki egziste deja.
+lis1=[10,11,12,13]
+lis2=[10,12,13,14,16]
+new_list=set(lis1) & set(lis2)
+print("Men yon nouvo lis avek eleman komen de 2 lot lis:",list(new_list))
+
+#8)Kreyasyon yon nouvo lis, ki genyen sèlman eleman distenge ant 2 lis yo.
+nouvo_lis=list()
+nouvo_lis=list(set(lis1) ^ set(lis2))
+print("Men yon nouvo lis avek selman eleman inik pou chak lis",nouvo_lis)
+
+#9)kreyasyon yon nouvo lis ak kle yo sèlman, epi yon lòt ak valè yo sèlman.
+
+diksyone = {'A': 1, 'B': 2, 'C': 3, 'D': 4}
+
+# Kreye yon nouvo lis ki gen sèlman kle yo
+lis_kle = list(diksyone.keys())
+
+# Kreye yon lòt lis ki gen sèlman valè yo
+lis_vale = list(diksyone.values())
+
+print("Lis kle diksyone an se:", lis_kle)
+print("Lis vale dikansyone an se:", lis_vale)
+
+#10)Reyinyon 3 lis ansanm, san okenn doublon
+l1=[0,1,2,3,4,5,6,7,8]
+l2=[0,2,4,6,8]
+l3=[0,3,6,9]
+reyinyon=list(set(l1+l2+l3))
+print("Reyinyon 3 lis yo san dublon bay sa:",reyinyon)
+
+
+"""lis_tipl=lis_i[(range(0,len(lis_i),3))]
+print(lis_tipl)"""
         
 
 
