@@ -55,6 +55,22 @@ for el in lis:
         modilo.append(el)
 print("Men lis eleman ki divizib pa 2 nan enteval [0-10] lan:\n",modilo)
     
+#2)Konveti yon lis antye an yon lis chen
+Lis_ant=[0,2,5,6,9,7]
+Lis_chen=[str(e) for e in Lis_ant]
+print("Konvesyon yon lis antye an yon lis chene bay sa:\n",Lis_chen)
+#3)Konvèti yon lis chen miniskil an majiskil
+lisminiskil=['plumme','papier','cahier','c']
+lismajiskil=[m.upper() for m in lisminiskil]
+print(list(lismajiskil))
+#4) kreyasyon yon nouvo lis ki fèt ak eleman ki nan endèks ki divizib pa 3 yo sèlman
+lis_s=[1,'a',3,'c',5,'e',7,'z']
+lis_3=[lis_s[i] for i in range (len(lis_s)) if i%3==0]
+print("Nan yon lis [1,'a',3,'c[]',5,'e',7,'z']Eleman ki nan endeks ki divizib pa 3 yo se:",lis_3)
+
+            
+       # print(lis_3.append(i))
+        
 
 
 
