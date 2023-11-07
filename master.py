@@ -1,4 +1,4 @@
-#-----------------Master Str-------------------------------------------------------
+print("-----------------Master Str-------------------------------------------------------")
 #1)M mete tout karaktè yo an miniskil
 chen="MWEN RenmeN Kou PYTHON an anpil"
 print(chen)
@@ -46,6 +46,7 @@ print("Men lis ki gen endeks tout karaktè ti a ki nan chenn lan:",lis_a)
 espas=chen.replace(" ","")
 print("Chenn kole ak longe l san espas bay sa:\n",espas+str(len(espas)))
 #    ---------------------------------------------------------------------------------------
+print("-----------------------------------------------------------------------------------")
 print("----------------------------------Master list--------------------------------------")
 #1)Kreye yon lis eleman ki divizib pa 2, nan entèval [0-n] enklizif
 lis=[0,1,2,3,4,5,6,7,8,9,10]
@@ -112,8 +113,7 @@ reyinyon=list(set(l1+l2+l3))
 print("Reyinyon 3 lis yo san dublon bay sa:",reyinyon)
 
 
-"""lis_tipl=lis_i[(range(0,len(lis_i),3))]
-print(lis_tipl)"""
+
         
 
 
